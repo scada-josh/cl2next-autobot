@@ -8,6 +8,7 @@ $password = 'fcc2d652fec73b737a042e8099ed83970b641742c2c8db2200b41268f5e2332b';
 $connection = new PDO(sprintf('pgsql:host=%s;dbname=%s', $host, $database), $username, $password);
 
 print($connection);
+print("Helloworld");
 
 $query = "SELECT * FROM appointments";
 $connection->execute($query);
