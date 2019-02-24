@@ -12,6 +12,9 @@ $connection = new PDO(sprintf('pgsql:host=%s;dbname=%s', $host, $database), $use
 // 	'content' => 'test content'
 // );
 
+error_log("Hello log");
+error_log($connection);
+
 $params = array(
 	'time' => 'ทดสอบ time',
 	'content' => 'ทดสอบ content'
