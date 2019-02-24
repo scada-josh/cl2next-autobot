@@ -34,6 +34,8 @@ $events = json_decode($content, true);
 error_log("LINE API Messaging");
 error_log("Channel Token");
 error_log($channel_token);
+error_log("Content");
+error_log($content);
 
 if (!is_null($events['events'])) {
 	// Loop through each event
